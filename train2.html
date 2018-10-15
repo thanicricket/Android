@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>train2</title>
+        <script src="jquery_library.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#task1").click(function(){
+                    alert("hi");
+                    window.location.assign("ad1.html");
+                });
+            });
+        </script>
+        <style>
+            *{
+                font-family:calibri;
+                padding:0px;
+                margin:0px;
+            }
+            .task{
+                background-color: blueviolet;
+                color: azure;
+                height: 15%;
+                width:50%;
+                margin:5% 30%;
+            }
+            .Home{
+                width:100%;
+                display: block;
+            }
+            .options{
+                vertical-align: top;
+                width:10%;
+                height:100%;
+                display: inline-block;
+                background-color: black;
+                color:white;
+                align-content: top;
+            }
+            .Tasks{
+                width:80%;
+                display: inline-block;
+                
+            }
+            @media only screen and (max-width: 600px) {
+                body{width:100%;height:auto; margin:2%;}
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="Home">
+            <div class="options">
+                <figure>
+                    <img src="driveicon.png" width="100%" height="auto"><img>
+                </figure>
+            </div>
+            <div class="Tasks">
+                <input class="task" id="task1" type="button" name="task1" value="task1" height="30%" width="50%"></button>
+                <input class="task" id="task2" type="button" name="task2" value="task2"></button>
+                <input class="task" id="task3" type="button" name="task3" value="task3"></button>
+                <input class="task" id="task4" type="button" name="task4" value="task4"></button>
+            </div>
+        </div>
+    </body>
+</html>
