@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>train</title>
+        <script src="jquery_library.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".logo").click(function(){
+                    alert("hi");
+                    window.location.assign("train2.html");
+                });
+            });
+        </script>
+        <style>
+            *{
+                font-family:calibri;
+                padding:0px;
+                margin:0px;
+            }
+            body{
+                width:100%;
+            }
+            .text{
+                position: absolute;
+                top:70%;
+                left:10%;
+                font-size: 100px;
+                color: yellow;
+            }
+            @media only screen and (max-width: 600px) {
+                body{width:100%;height:auto;}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="logo">
+            <figure>
+                <img src="thani.jpg" width="100%" height="100%"><span class="text">Money Earning App</span></img>
+            </figure>
+        </div>
+    </body>
+</html>
